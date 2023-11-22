@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Excersice-1</title>
+</head>
+<body>
+    
+    <script>
+        let number=0;
+        let chance=0;
+        let usernum=0;
+        number= Math.floor((Math.random() * 10) + 1);
+        //console.log(number);
+        // usernum=prompt("enter the number you want");
+        // usernum=Number.parseInt(usernum);
+        //console.log(usernum);
+        
+        while (number !==usernum) 
+        {
+            usernum=prompt("enter the number again  you want as you enter the wrong number");
+            usernum=Number.parseInt(usernum);
+            //console.log(usernum);
+            // if(number==usernum){
+            //     console.log("both numbers get match")
+            //     break;
+            // }else 
+            if (number>usernum) {
+                console.log("number is smaller then you enter")
+            } else if(number<usernum) {
+                console.log("number is greater then you enter")
+            }
+            
+            chance++;
+            
+            
+        }
+        console.log(`the rendom number is ${number}`);
+        console.log("both numbers get match")
+        console.log(`attempts : ${chance-1}`);
+    </script>
+    
+</body>
+</html>
